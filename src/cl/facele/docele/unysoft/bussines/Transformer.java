@@ -24,24 +24,24 @@ public class Transformer {
 		//envia a bean los datos del contribuyente
 		try {
 			
-                        if(getTipoDocumento(tipoDocumento)==34){
+                        if(tipoDocumento.equals("34")){
                             emisorBean = PropiedadesRead.getBean(infoContribuyente);
                             documentoBean = SpfRead.getBean(infoSPF);
-                            documentoBean.setTipoDoc(getTipoDocumento(tipoDocumento));
+                            documentoBean.setTipoDoc(Integer.parseInt(tipoDocumento));
                             GeneraTXT txt = new GeneraTXT();
                             resultado = txt.generaFacturaExenta(documentoBean, emisorBean);
                         }
-                        else if (getTipoDocumento(tipoDocumento)==46){
+                        else if (tipoDocumento.equals("46")){
                             emisorBean = PropiedadesRead.getBean(infoContribuyente);
                             documentoBean2 = SpfRead.getBean46(infoSPF);
-                            documentoBean2.setTipoDoc(getTipoDocumento(tipoDocumento));
+                            documentoBean2.setTipoDoc(Integer.parseInt(tipoDocumento));
                             GeneraTXT txt = new GeneraTXT();
                             resultado = txt.generaFacturaCompra(documentoBean2, emisorBean);
                         }
                         else{
                             emisorBean = PropiedadesRead.getBean(infoContribuyente);
                             documentoBean = SpfRead.getBean(infoSPF);
-                            documentoBean.setTipoDoc(getTipoDocumento(tipoDocumento));
+                            documentoBean.setTipoDoc(Integer.parseInt(tipoDocumento));
                             GeneraTXT txt = new GeneraTXT();
                             resultado = txt.generaFacturaTexto(documentoBean, emisorBean);
                         }

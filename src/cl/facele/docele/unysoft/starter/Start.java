@@ -17,7 +17,7 @@ public class Start {
 	 * @throws  
 	 */
 	public static void main(String[] args) throws Exception {
-		String pathFileSpf = "/Users/Sojiroh/Downloads/46_NPG_38121723122014.SPF";
+		String pathFileSpf = "/Users/Sojiroh/Downloads/33_NPG_25011605012015.SPF";
 		String pathFileContribuyente_ = "/Users/Sojiroh/Downloads/ce_consulta_muestra_e_dwnld_78206080-5.csv";
 
 		Path pathFile = Paths.get(pathFileSpf);
