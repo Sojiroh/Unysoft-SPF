@@ -5,11 +5,9 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 import org.apache.log4j.Logger;
-
 import cl.facele.docele.unysoft.bussines.Transformer;
 
 public class Start {
-	Logger logger = Logger.getLogger(Object.class);
 
 	/**
 	 * @param args
@@ -17,9 +15,9 @@ public class Start {
 	 * @throws  
 	 */
 	public static void main(String[] args) throws Exception {
-		String pathFileSpf = "/Users/Sojiroh/Downloads/33_NPG_25011605012015.SPF";
-		String pathFileContribuyente_ = "/Users/Sojiroh/Downloads/ce_consulta_muestra_e_dwnld_78206080-5.csv";
-
+		String pathFileSpf = "/Users/Sojiroh/Downloads/33_NPG_16041020042015.SPF";
+		String pathFileContribuyente_ = "/Users/Sojiroh/Dropbox/ENROLAMIENTO/CONTRIBUYENTES/HISTORICO/78206080-5_ AGUA SANTA/ce_consulta_muestra_e_dwnld_78206080-5.csv";
+org.apache.log4j.BasicConfigurator.configure();
 		Path pathFile = Paths.get(pathFileSpf);
 		Path pathFileContribuyente = Paths.get(pathFileContribuyente_);
 

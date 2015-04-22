@@ -31,17 +31,17 @@ public class Transformer {
                             GeneraTXT txt = new GeneraTXT();
                             resultado = txt.generaFacturaExenta(documentoBean, emisorBean);
                         }
-                        else if (tipoDocumento.equals("46")){
+                        else if (tipoDocumento.contains("46")){
                             emisorBean = PropiedadesRead.getBean(infoContribuyente);
                             documentoBean2 = SpfRead.getBean46(infoSPF);
-                            documentoBean2.setTipoDoc(Integer.parseInt(tipoDocumento));
+                            documentoBean2.setTipoDoc(Integer.parseInt("46"));
                             GeneraTXT txt = new GeneraTXT();
                             resultado = txt.generaFacturaCompra(documentoBean2, emisorBean);
                         }
                         else{
                             emisorBean = PropiedadesRead.getBean(infoContribuyente);
                             documentoBean = SpfRead.getBean(infoSPF);
-                            documentoBean.setTipoDoc(Integer.parseInt(tipoDocumento));
+                            documentoBean.setTipoDoc(getTipoDocumento(tipoDocumento));
                             GeneraTXT txt = new GeneraTXT();
                             resultado = txt.generaFacturaTexto(documentoBean, emisorBean);
                         }

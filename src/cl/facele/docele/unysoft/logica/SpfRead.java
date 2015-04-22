@@ -82,6 +82,7 @@ public class SpfRead {
 //	        logger.debug("Esta es la linea 4 " + linea.substring(340,358));
 	        bean.setMontoNeto(new BigDecimal(linea.substring(158,176).trim()));
 	        logger.debug("Monto Neto:" + bean.getMontoNeto());
+                logger.debug("errororroror" +linea.substring(176,194).trim());
 	        bean.setMontoExento(new BigDecimal(linea.substring(176,194).trim()));
 	        logger.debug("Monto Exento:" + bean.getMontoExento());
 	        bean.setMontoIva(new BigDecimal(arreglaString(linea.substring(199,217).trim())));
