@@ -24,7 +24,7 @@ public class Transformer {
 		//envia a bean los datos del contribuyente
 		try {
 			
-                        if(tipoDocumento.equals("34")){
+                        if(tipoDocumento.contains("34")){
                             emisorBean = PropiedadesRead.getBean(infoContribuyente);
                             documentoBean = SpfRead.getBean(infoSPF);
                             documentoBean.setTipoDoc(Integer.parseInt(tipoDocumento));

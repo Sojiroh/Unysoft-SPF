@@ -15,8 +15,8 @@ public class Start {
 	 * @throws  
 	 */
 	public static void main(String[] args) throws Exception {
-		String pathFileSpf = "/Users/Sojiroh/Downloads/33_NPG_16041020042015.SPF";
-		String pathFileContribuyente_ = "/Users/Sojiroh/Dropbox/ENROLAMIENTO/CONTRIBUYENTES/HISTORICO/78206080-5_ AGUA SANTA/ce_consulta_muestra_e_dwnld_78206080-5.csv";
+		String pathFileSpf = "D:\\Descargas\\46_NPG_53091602092015.SPF";
+		String pathFileContribuyente_ = "D:\\Dropbox\\ENROLAMIENTO\\CONTRIBUYENTES\\HISTORICO\\78206080-5_ AGUA SANTA\\ce_consulta_muestra_e_dwnld_78206080-5.csv";
 org.apache.log4j.BasicConfigurator.configure();
 		Path pathFile = Paths.get(pathFileSpf);
 		Path pathFileContribuyente = Paths.get(pathFileContribuyente_);

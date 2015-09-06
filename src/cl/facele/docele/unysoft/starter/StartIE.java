@@ -23,7 +23,7 @@ public class StartIE {
 	 * @throws  
 	 */
 	public static void main(String[] args) throws Exception {
-		String pathFileSpf = "/Users/Sojiroh/Downloads/LC_NPG_21040922042015.SPF";
+		String pathFileSpf = "D:\\Descargas\\LC_NPG_49080919082015.SPF";
 
 		Path pathFile = Paths.get(pathFileSpf);
 
@@ -39,9 +39,9 @@ public class StartIE {
 			DateFormat dateFormat = new SimpleDateFormat("HH_mm_ss_yyyy_MM_dd");
 			   //get current date time with Date()
 			Date date = new Date();
-			System.out.println("Nombre file: " + pathFile.getParent().toString() +"/IECV_" + dateFormat.format(date) + ".txt");
+			System.out.println("Nombre file: " + pathFile.getParent().toString() +"\\IECV_" + dateFormat.format(date) + ".txt");
 			   
-			BufferedWriter bw = new BufferedWriter(new FileWriter(pathFile.getParent().toString() +"/IECV_" + dateFormat.format(date) + ".txt"));
+			BufferedWriter bw = new BufferedWriter(new FileWriter(pathFile.getParent().toString() +"\\IECV_" + dateFormat.format(date) + ".txt"));
 			bw.write(contenido1 );
 			bw.close();
 		} catch (Exception e) {
