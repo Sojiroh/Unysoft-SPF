@@ -267,13 +267,13 @@ public class SpfRead {
 	    			
 	    		}
 	    		
-	    		if (tipodocumento.equals("033")){
-	    			if ((((periodo2-fechadoc)>=3))||(((periodo2-fechadoc)>=3)&&(periodo3-agnodoc>0)))
-	    				tipodocumento = "034";
-	    			
-	    			
-	    		} 
-	        	
+//	    		if (tipodocumento.equals("033")){
+//	    			if ((((periodo2-fechadoc)>=3))||(((periodo2-fechadoc)>=3)&&(periodo3-agnodoc>0)))
+//	    				tipodocumento = "034";
+//	    			
+//	    			
+//	    		} 
+//	        	
 	        	gen.setDetalle("tipoDoc", tipodocumento);
 	        	gen.setDetalle("folio", linea.substring(3,13));
 	        	gen.setDetalle("folioAnulado", arreglaString(linea.substring(13,14)));

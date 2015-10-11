@@ -23,7 +23,7 @@ public class StartIE {
 	 * @throws  
 	 */
 	public static void main(String[] args) throws Exception {
-		String pathFileSpf = "D:\\Descargas\\LC_NPG_49080919082015.SPF";
+		String pathFileSpf = "D:\\Descargas\\LC_NPG_42091025092015.SPF";
 
 		Path pathFile = Paths.get(pathFileSpf);
 

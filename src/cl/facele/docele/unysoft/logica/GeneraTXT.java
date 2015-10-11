@@ -254,7 +254,7 @@ public class GeneraTXT {
 			documentoBean.setReceptorComuna("NO INFORMADO");
 		fecha = formatoDeFecha.parse(documentoBean.getFechaEmision());
                 String encabezado = "A0;;;;;;;;;;;" + "\n";
-                encabezado += "ENC;46;0;"+
+                encabezado += "ENC;46;"+documentoBean.getFolio()+";"+
                         formato.format(fecha)+";;;;;;;"+
                         2+";;;;;;;;;;;;;;;"+
                         cBean.getRutContribuyente()+";"+
